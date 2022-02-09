@@ -1,0 +1,26 @@
+@model Bar
+<h1>Cadastro De usuarios</h1>
+
+<form method="POST">
+    <p>
+    <label asp-for="nomeClientePublic">Nome:</label>
+    <input type="text" asp-for="nomeClientePublic" placeholder="Nome" required>
+    </p>
+    <p>
+    <label asp-for="loginClientePublic">Login:</label>
+    <input type="text" asp-for="loginClientePublic" placeholder="Login" required>
+    </p>
+    <p>
+        <label asp-for="senhaClientePublic">Senha:</label>j
+        <input type="password" asp-for="senhaClientePublic" placeholder="Senha" required>
+    </p>
+    <p>
+        <label asp-for="telefonePublic">Telefone:</label>
+        <input type="tel" asp-for="telefonePublic" placeholder="(dd)99999-9999">
+    </p>
+    <p>
+        <input type="submit" value="Cadastrar">
+    </p>
+</form>
+
+@ViewBag.Mensagem
